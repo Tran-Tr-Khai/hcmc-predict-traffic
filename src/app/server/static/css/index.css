@@ -1,0 +1,114 @@
+html {
+    font-family: sans-serif;
+    font-size: 11pt;
+}
+
+.map {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.results {
+    background-color: white;
+    opacity: 0.8;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 320px;
+    height: 480px;
+    overflow-y: scroll;
+}
+
+#date-time {
+    background-color: white;
+    opacity: 0.8;
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    width: 250px;
+    height: 150px;
+}
+
+#date-time h5 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#date-time p {
+    text-align: center;
+    margin: 6px 0;
+}
+
+#start {
+    background-color: white;
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+}
+
+#find {
+    background-color: white;
+    position: absolute;
+    right: 72px;
+    bottom: 24px;
+}
+
+/* styles.css */
+#snackbar {
+    visibility: visible;
+    min-width: 150px;
+    max-width: 300px;
+    height: 350px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: absolute;
+    z-index: 1;
+    left: 50px;
+    top: 12%;
+    font-size: 17px;
+    transition: visibility 0s, opacity 0.5s linear;
+    opacity: 0;
+    overflow: scroll;
+}
+
+#snackbar.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+#notificationList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#notificationList li {
+    margin-bottom: 8px;
+    background: #444;
+    padding: 8px;
+    border-radius: 2px;
+}
+
+/* path.leaflet-interactive.animate {
+    stroke-dasharray: 1920;
+    stroke-dashoffset: 1920;
+    animation: dash 20s linear 3s forwards;
+} */
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* div.leaflet-top.leaflet-right {
+    display: none !important;
+    width: 0px !important;
+    height: 0px !important;
+} */

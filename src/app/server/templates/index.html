@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='dist/leaflet-routing-machine.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/index.css') }}"
+    />
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <div id="snackbar">
+      <h3>Dự đoán kẹt xe</h3>
+      <ul id="notificationList"></ul>
+    </div>
+    <div>
+      <button id="find">Find</button>
+      <button id="start">Start</button>
+    </div>
+    <div id="date-time">
+      <h5 id="time">08:20</h5>
+      <p id="date">2024-07-23</p>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+    <script src="{{ url_for('static', filename='dist/leaflet-routing-machine.js') }}"></script>
+    <script src="{{ url_for('static', filename='dist/L.MoveMarker.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/Control.Geocoder.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/config.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/snack.notification.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/timer.js') }}"></script>
+  </body>
+</html>
