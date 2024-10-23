@@ -1,3 +1,3 @@
 # **hcmc-etl-pipline**
 
-report [slides.pptx](src/app/reports).
+report [slides.pptx](hcmc-predict-traffic/reports).
